@@ -94,4 +94,27 @@ src/main/java/com/gridnine/testing
 - `FlightTest` — проверяет корректность метода `getTotalGroundTimeMinutes`.
 - `FlightFilterIntegrationTest` — проверяет работу цепочки фильтров на тестовых данных.
 
+## Запуск
+
+### Вариант 1. Maven
+# Сборка проекта
+mvn clean package
+
+# Запуск приложения
+mvn exec:java -Dexec.mainClass="com.gridnine.testing.app.Main"
+
+# Запуск всех тестов
+mvn test
+
+### Вариант 2. Gradle
+# Сборка проекта
+./gradlew build
+
+# Запуск приложения
+./gradlew run
+
+# Запуск всех тестов
+./gradlew test
+
+
 Автор: Alex
